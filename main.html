@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" 	/>
+	<title>SAMSUNG 员工福利网</title>
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/mall-style.css">
+	
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	
+</head>
+<body>
+	<div data-role="page" id="home">
+		<!-- header begin -->
+		<header data-role="header">
+			<h1><input type="search" name="password" id="search" value="" placeholder=""></h1>
+			<a href="#" class="brand fl"></a>
+			<a href="#" class="icon-header mypage fr"></a>
+		</header>
+		<!-- header end -->
+
+		<!-- content begin -->
+		<div role="main" class="ui-content">
+			<!-- category begin -->
+			<div class="cate-more">
+				<button class="icon-header btn-cate-more"></button>
+				<ul class="cate-more-detail">
+			        <li>One</li>
+			        <li>Two</li>
+			        <li>Three</li>
+	    		</ul>
+			</div>
+			
+			<div class="category-bar-container">
+				<ul class="category-bar">
+					<li><a href="#">化妆品/个人护理</a></li>
+					<li><a href="#">化妆品/个人护理</a></li>
+				</ul>
+			</div>
+			<!-- category end -->
+
+			<!-- 기획전 carousel swipe begin -->
+			<div class="exhibit-slick">
+			  <div>banner 1</div>
+				<div>banner 2</div>
+			  <div>banner 3</div>
+			</div>
+			<!-- 기획전 carousel swipe begin -->
+
+			<!-- my info begin -->
+			<div class="myinfo-main">
+				myinfo
+			</div>
+			<!-- my info end -->
+
+			<!-- best item begin -->
+			<div class="bast-item">
+				best-item
+			</div>
+			<!-- best item end -->
+		</div>
+		<!-- content end -->
+
+		<!-- footer begin -->
+		<div data-role="footer">
+			<div class="ui-input-btn ui-btn ui-icon-delete ui-btn-icon-top">
+        btn1
+        <input type="button" data-enhanced="true" value="Enhanced - Top">
+      </div>
+			<div class="ui-input-btn ui-btn ui-icon-delete ui-btn-icon-top">
+        btn2
+        <input type="button" data-enhanced="true" value="Enhanced - Top">
+      </div>
+			<div class="ui-input-btn ui-btn ui-icon-delete ui-btn-icon-top">
+        btn3
+        <input type="button" data-enhanced="true" value="Enhanced - Top">
+      </div>
+			<div class="ui-input-btn ui-btn ui-icon-delete ui-btn-icon-top">
+        btn4
+        <input type="button" data-enhanced="true" value="Enhanced - Top">
+      </div>
+			<div class="ui-input-btn ui-btn ui-icon-delete ui-btn-icon-top">
+        btn5
+        <input type="button" data-enhanced="true" value="Enhanced - Top">
+      </div>
+		</div>
+		<!-- footer end -->
+	</div>
+
+	<script src="js/slick.min.js"></script>
+	<script type="text/javascript">
+    $(document).ready(function(){
+      $('.exhibit-slick').slick({dots:true});
+
+      $('.btn-cate-more').click(function() {
+		    $('.cate-more-detail').slideToggle(200).css('borderTop', 'none');
+		    $('.cate-more-detail li').click(function() {
+		        $('.selectBox').slideUp(200);
+		    });
+			});
+    });
+  </script>
+</body>
+</html>
