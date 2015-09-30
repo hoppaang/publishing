@@ -29,9 +29,9 @@
 			<div class="cate-more">
 				<button class="icon-header btn-cate-more"></button>
 				<ul class="cate-more-detail">
-			        <li>One</li>
-			        <li>Two</li>
-			        <li>Three</li>
+			        <li><a href="#">category item 1</a></li>
+			        <li><a href="#">category item 2</a></li>
+			        <li><a href="#">category item 3</a></li>
 	    		</ul>
 			</div>
 			
@@ -45,15 +45,16 @@
 
 			<!-- 기획전 carousel swipe begin -->
 			<div class="exhibit-slick">
-			  <div>banner 1</div>
-				<div>banner 2</div>
-			  <div>banner 3</div>
+			  <div><a href="#"><img src="images/sample-bigbanner1.png"/></a></div>
+				<div><a href="#"><img src="images/sample-bigbanner2.png"/></a></div>
 			</div>
 			<!-- 기획전 carousel swipe begin -->
 
 			<!-- my info begin -->
 			<div class="myinfo-main">
-				myinfo
+				<div class="user-name"><span>samsung electronics</span>韓裕美</div>
+				<div class="user-remain-point"><span>剩余积分</span>350</div>
+				<div class="user-accum-point"><span>累计积分</span>2,000</div>
 			</div>
 			<!-- my info end -->
 
@@ -67,24 +68,19 @@
 
 		<!-- footer begin -->
 		<div data-role="footer">
-			<div class="ui-input-btn ui-btn ui-icon-delete ui-btn-icon-top">
-        btn1
+			<div class="ui-input-btn ui-btn icon-footer home ui-btn-icon-top">网站
         <input type="button" data-enhanced="true" value="Enhanced - Top">
       </div>
-			<div class="ui-input-btn ui-btn ui-icon-delete ui-btn-icon-top">
-        btn2
+			<div class="ui-input-btn ui-btn icon-footer wishlist ui-btn-icon-top">愿望目录
         <input type="button" data-enhanced="true" value="Enhanced - Top">
       </div>
-			<div class="ui-input-btn ui-btn ui-icon-delete ui-btn-icon-top">
-        btn3
+			<div class="ui-input-btn ui-btn icon-footer cart ui-btn-icon-top">购物篮
         <input type="button" data-enhanced="true" value="Enhanced - Top">
       </div>
-			<div class="ui-input-btn ui-btn ui-icon-delete ui-btn-icon-top">
-        btn4
+			<div class="ui-input-btn ui-btn icon-footer order ui-btn-icon-top">订单/配送
         <input type="button" data-enhanced="true" value="Enhanced - Top">
       </div>
-			<div class="ui-input-btn ui-btn ui-icon-delete ui-btn-icon-top">
-        btn5
+			<div class="ui-input-btn ui-btn icon-footer mypage ui-btn-icon-top">我的页面
         <input type="button" data-enhanced="true" value="Enhanced - Top">
       </div>
 		</div>
@@ -94,7 +90,11 @@
 	<script src="js/slick.min.js"></script>
 	<script type="text/javascript">
     $(document).ready(function(){
-      $('.exhibit-slick').slick({dots:true});
+      $('.exhibit-slick').slick({
+      	dots:true,
+      	autoplay: true,
+  			autoplaySpeed: 4000,
+      });
 
       $('.btn-cate-more').click(function() {
 		    $('.cate-more-detail').slideToggle(200).css('borderTop', 'none');
