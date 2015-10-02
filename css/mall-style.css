@@ -4,14 +4,20 @@ ul{list-style:none;padding:0;margin:0;}
 a{text-decoration:none}
 button:focus{box-shadow:none !important;}
 .ui-header .ui-title, .ui-footer .ui-title{margin:0 17%;}
-.ui-content{padding:0;}
-.ui-footer{position:absolute;bottom:0;width:100%;text-align:center;}
-.ui-footer .ui-input-btn{width:15%;}
+.ui-content{padding:0 0 0 0;}
+.ui-footer{bottom:0;width:100%;text-align:center;}
+.ui-footer .ui-input-btn{width:16.5%;text-align:center;text-shadow:none;color:#fff;font-weight:normal;}
 .toggler{overflow:visible;}
+.ui-page-theme-a{background:#fff;}
+a.go-top{
+	background:url('../images/icon-arrow-up.png') 50% 50% no-repeat rgba(41,104,182,0.8);background-size:80%;width:50px;height:50px;display:block;position:fixed;right:10px;bottom:65px;
+	border-radius:50px;-moz-border-radius:50px;-webkit-border-radius:50px;color:#fff;
+	-webkit-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.3);-moz-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.3);box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.3);
+}
 
 /* header style */
 header{background:#fff !important;border:none !important}
-header .brand{background:url('../images/brand.png') 50% 50% no-repeat transparent !important;background-size:100% !important;box-shadow:none !important;border:none !important;width:24px;height:20px;margin-top:1px !important;}
+header .brand{background:url('../images/brand.png') 50% 45% no-repeat transparent !important;background-size:100% !important;box-shadow:none !important;border:none !important;width:24px;height:20px;margin-top:1px !important;}
 header .ui-input-search{border-radius:0 !important;-webkit-border-radius:0 !important;border:1px solid #91b5e0 !important;box-shadow:none}
 .ui-input-search input{min-height:1.2em;padding:.2em .4em .2em 1.8em;}
 header .ui-input-search:after{background:url('../images/icon-search.png') no-repeat;background-size:100% 100%;top:40%;width:20px;height:20px;}
@@ -29,16 +35,25 @@ header a.icon-header,.icon-header{border:none !important;padding:0 !important;-w
 .cate-more-detail li{background:url('../images/dot-white-5.png') 9px 50% no-repeat;float:left;width:49.8%;border:1px solid rgba(58, 109, 173, 0.75);border-width:0 1px 1px 0;}
 .cate-more-detail li:nth-child(even){border-right:none;}
 .cate-more-detail li a{display:block;margin-left:1em;padding:.6em .2em .5em .2em;text-shadow:none;color:#fff;font-weight:normal;}
+.cate-more-detail li a:active,.cate-more-detail li a:visited,.cate-more-detail li a:hover{color:#fff;}
 
 /* footer style */
-.ui-footer{background-color:rgba(41,104,182,0.9) !important;}
+.ui-footer.ui-bar-inherit{border:none;}
+.ui-footer{background-color:rgba(41,104,182,0.8) !important;}
+.ui-footer .ui-btn{padding-bottom:0;font-size:12px;}
+.ui-footer .ui-btn-icon-notext:after,.ui-footer .ui-btn-icon-top:after,.ui-footer .ui-btn-icon-bottom:after{left:43%;}
 .icon-footer:after{background:url('../images/icon-footer.png') 50% 0 no-repeat;background-size:100%;top:.2em;width:35px;height:35px;}
 .icon-footer,.icon-footer input[type='button']{border:none !important;background:transparent !important;}
+.icon-footer.wishlist:after{background-position:50% -70px}
+.icon-footer.cart:after{background-position:50% -140px}
+.icon-footer.order:after{background-position:50% -210px}
+.icon-footer.mypage:after{background-position:50% -280px}
 
 /* page style - main */
 #home .ui-header .ui-title{padding:0;}
 #home .ui-input-search{margin:.5em 0;}
 .exhibit-slick{clear:both;}
+.exhibit-korea a{font-size:0;display:block;}
 .myinfo-main{background-color:#2968b6;overflow:hidden;}
 .myinfo-main div{float:left;padding:7px 1%;text-shadow:none;color:#fff;font-size:1.3em;font-weight:bold;}
 .myinfo-main div span{display:block;font-weight:normal;font-size:.7em;color:#bfeb63;}
@@ -46,10 +61,37 @@ header a.icon-header,.icon-header{border:none !important;padding:0 !important;-w
 .myinfo-main .user-name span{margin-bottom:4px;font-size:.6em;color:#70c4ff;}
 .myinfo-main .user-remain-point{background:url('../images/icon-myinfo-remain-point') 10% 50% no-repeat;background-size:33%;border:1px solid #255da3;border-width:0 1px;padding-left:2.5em;}
 .myinfo-main .user-accum-point{background:url('../images/icon-myinfo-accum-point') 5% 50% no-repeat;background-size:33%;padding-left:2em;}
+.best-item-slick button{display:none !important;}
+.best-item{background-color:#f6f6f6;}
+.best-item .tag-best{position:absolute;width:32px !important;height:36px;margin-top:-3px;margin-left:.3em;}
+.best-item-slick .slick-slide{float:left;margin-right:.7em;}
+.best-item .slick-track{padding:.2em .5em;}
+.best-item .title{padding-top:.3em;margin-left:.3em;font-size:1.1em;font-weight:700;color:#585858;}
+.best-item .title span{color:#00856f;}
+.best-item .product-img{width:100%;}
+.best-item .product-name{margin-top:.3em;width:100%;text-overflow:ellipsis;overflow:hidden;height:33px;font-size:.8em;font-weight:200;color:#585858;}
+.best-item .product-price{margin-top:.1em;font-size:.9em;color:#fa5413;}
+.best-item-slick div img,.best-item-slick div span{display:block;}
+.exhibit-type1{background-color:#fff;border:1px solid #e5e5e5;border-width:1px 0;}
+.exhibit-type1 a{display:inline-block;}
+.exhibit-type1 a.big-banner{width:53%;float:left;}
+.exhibit-type1 a.banner{width:46%;border-left:1px solid #e5e5e5;}
+.exhibit-type1 a.banner:nth-child(odd){border-top:1px solid #e5e5e5;}
+.exhibit-type1 a img{width:100%;}
+.recommend .title{margin-top:.3em;font-size:1.1em;font-weight:700;color:#585858;}
+.recommend{padding:.2em .5em;}
+.recommend a{width:48%;float:left;margin-bottom:15px;}
+.recommend a:nth-child(even){margin-right:3%;}
+.recommend a img{width:100%;}
+.recommend span{display:block;}
+.recommend .product-name{margin-top:.3em;width:100%;text-overflow:ellipsis;overflow:hidden;height:15px;font-size:.9em;font-weight:700;color:#333;}
+.recommend .product-desc{margin-top:.1em;width:100%;text-overflow:ellipsis;overflow:hidden;height:30px;font-size:.7em;font-weight:200;color:#666;}
+.recommend .product-price{margin-top:.1em;font-size:.9em;color:#fa5413;}
+.tag-korea{position:relative;float:right;width:45px !important;height:41px;margin-top:7px;margin-bottom:-45px;}
 
 /* slick - reset */
 .slick-slider{margin-bottom:0;}
-.exhibit-slick a,.exhibit-slick img{width:100%;}
+.exhibit-slick a,.exhibit-slick img,.exhibit-korea img{width:100%;}
 .exhibit-slick .slick-prev,.exhibit-slick .slick-next{display:none !important;}
 .exhibit-slick .slick-dots{bottom:0px;margin-bottom:15px;}
 .slick-dots button{background-color:rgba(0,0,0,0.3);border:1px solid #fff;border-radius:15px !important;-webkit-border-radius:15px !important;-moz-border-radius:15px !important;width:10px;height:10px;padding:0;font-size:0px;}
