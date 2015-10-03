@@ -117,8 +117,13 @@ header a.icon-header,.icon-header{border:none !important;padding:0 !important;-w
 .category-tab .tablist-content li img{width:45%;display:block;margin:auto;}
 
 /* page style - detail info */
-.product-detail-slick button{display:none !important;}
+.product-detail-slick button.slick-arrow{display:none !important;}
 .product-detail-slick img{width:100%;}
+.detailinfo-info{background:url('../images/bg-detailinfo-info.png') no-repeat;background-size:100%;position:relative;top:-17px;padding-top:20px;}
+.detailinfo-info span{display:block;text-shadow:none;}
+.detailinfo-info .desc{background-color:#f1f1f1;padding:0 .4em .4em .4em;}
+.detailinfo-info .price{background-color:#f1f1f1;padding:0 .4em .4em .4em;border-bottom:1px solid #d8d8d8;font-size:1.1em;color:#fa5413;font-weight:700;}
+.detailinfo-info .price strike{color:#999;font-weight:300;}
 
 /* slick - reset */
 .slick-slider{margin-bottom:0;}
@@ -127,3 +132,4 @@ header a.icon-header,.icon-header{border:none !important;padding:0 !important;-w
 .exhibit-slick .slick-dots{bottom:0px;margin-bottom:15px;}
 .slick-dots button{background-color:rgba(0,0,0,0.3);border:1px solid #fff;border-radius:15px !important;-webkit-border-radius:15px !important;-moz-border-radius:15px !important;width:10px;height:10px;padding:0;font-size:0px;}
 .slick-dots .slick-active button{background-color:#fff;border:1px solid rgba(0,0,0,0.4)}
+.product-detail-slick .slick-dots{bottom:0px;margin-bottom:25px;}
