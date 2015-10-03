@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" 	/>
@@ -13,7 +13,7 @@
 	<script src="js/jquery.mobile-1.4.5.min.js"></script>
 	
 </head>
-<body><a name="top"></a>
+<body>
 	<div data-role="page" id="home">
 		<!-- header begin -->
 		<header data-role="header">
@@ -26,19 +26,20 @@
 		<!-- content begin -->
 		<div role="main" class="ui-content">
 			<!-- category begin -->
-			<div class="cate-more">
-				<button class="icon-header btn-cate-more"></button>
-				<ul class="cate-more-detail">
-			        <li><a href="#">category item 1</a></li>
-			        <li><a href="#">category item 2</a></li>
-			        <li><a href="#">category item 3</a></li>
-	    		</ul>
-			</div>
-			
 			<div class="category-bar-container">
 				<ul class="category-bar">
 					<li><a href="#">化妆品/个人护理</a></li>
 					<li><a href="#">化妆品/个人护理</a></li>
+					<li>
+						<div class="cate-more">
+							<button class="icon-header btn-cate-more"></button>
+							<ul class="cate-more-detail">
+						        <li><a href="#">category item 1</a></li>
+						        <li><a href="#">category item 2</a></li>
+						        <li><a href="#">category item 3</a></li>
+				    		</ul>
+						</div>
+					</li>
 				</ul>
 			</div>
 			<!-- category end -->
@@ -184,6 +185,19 @@
 		        $('.selectBox').slideUp(200);
 		    });
 			});
+
+			$(window).scroll(function(){
+			if ($(this).scrollTop() > 100) {
+				$('.go-top').fadeIn();
+				} else {
+					$('.go-top').fadeOut();
+				}
+			});
+
+			$('.go-top').click(function(){
+				$('html, body').animate({scrollTop : 0},800);
+				return false;
+		  });
     });
   </script>
 </body>

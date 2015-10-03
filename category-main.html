@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" 	/>
+	<title>SAMSUNG 员工福利网</title>
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/mall-style.css">
+	
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	
+</head>
+<body>
+	<div data-role="page" id="home">
+		<!-- header begin -->
+		<header data-role="header">
+			<h1><input type="search" name="password" id="search" value="" placeholder=""></h1>
+			<a href="#" class="brand fl"></a>
+			<a href="#" class="icon-header mypage fr"></a>
+		</header>
+		<!-- header end -->
+
+		<!-- content begin -->
+		<div role="main" class="ui-content">
+			<!-- category begin -->
+			<div class="category-bar-container">
+				<ul class="category-bar">
+					<li><a href="#">化妆品/个人护理</a></li>
+					<li>
+						<div class="cate-more">
+							<button class="icon-header btn-cate-more"></button>
+							<ul class="cate-more-detail">
+						        <li><a href="#">category item 1</a></li>
+						        <li><a href="#">category item 2</a></li>
+						        <li><a href="#">category item 3</a></li>
+				    		</ul>
+						</div>
+					</li>
+
+					<li class="pull-right sort-option">
+						<a href="#" class="arrow-up">新品</a>
+						<a href="#" class="arrow-down">价格</a>
+					</li>
+				</ul>
+			</div>
+			<!-- category end -->
+
+			<!-- recommend begin -->
+			<div class="recommend">
+				<div class="title">类目别推荐商品</div>
+			  <a href="#">
+			  	<img src="images/product-img-half1.png"/>
+			  	<span class="product-name">京东现货自营，直降800再满减</span>
+			  	<span class="product-desc">满4000减200，大疆精灵3P3S大放价，先到先得！</span>
+			  	<span class="product-price">￥3999.00</span>
+			  </a>
+
+			  <a href="#">
+			  	<img src="images/tag-korea.png" class="tag-korea"/>
+			  	<img src="images/product-img-half2.png"/>
+			  	<span class="product-name">京东现货自营，直降800再满减</span>
+			  	<span class="product-desc">满4000减200</span>
+			  	<span class="product-price">￥3999.00</span>
+			  </a>
+
+			  <a href="#">
+			  	<img src="images/tag-korea.png" class="tag-korea"/>
+			  	<img src="images/product-img-half1.png"/>
+			  	<span class="product-name">京东现货自营，直降800再满减</span>
+			  	<span class="product-desc">满4000减200，大疆精灵3P3S大放价，先到先得！</span>
+			  	<span class="product-price">￥3999.00</span>
+			  </a>
+
+			  <a href="#">
+			  	<img src="images/tag-korea.png" class="tag-korea"/>
+			  	<img src="images/product-img-half2.png"/>
+			  	<span class="product-name">京东现货自营，直降800再满减</span>
+			  	<span class="product-desc">满4000减200</span>
+			  	<span class="product-price">￥3999.00</span>
+			  </a>
+
+			  <a href="#">
+			  	<img src="images/tag-korea.png" class="tag-korea"/>
+			  	<img src="images/product-img-half1.png"/>
+			  	<span class="product-name">京东现货自营，直降800再满减</span>
+			  	<span class="product-desc">满4000减200，大疆精灵3P3S大放价，先到先得！</span>
+			  	<span class="product-price">￥3999.00</span>
+			  </a>
+
+			  <a href="#">
+			  	<img src="images/tag-korea.png" class="tag-korea"/>
+			  	<img src="images/product-img-half2.png"/>
+			  	<span class="product-name">京东现货自营，直降800再满减</span>
+			  	<span class="product-desc">满4000减200</span>
+			  	<span class="product-price">￥3999.00</span>
+			  </a>
+
+			  <a href="#">
+			  	<img src="images/tag-korea.png" class="tag-korea"/>
+			  	<img src="images/product-img-half1.png"/>
+			  	<span class="product-name">京东现货自营，直降800再满减</span>
+			  	<span class="product-desc">满4000减200，大疆精灵3P3S大放价，先到先得！</span>
+			  	<span class="product-price">￥3999.00</span>
+			  </a>
+			</div>
+			<!-- recommend begin -->
+		</div>
+		<!-- content end -->
+
+		<!-- footer begin -->
+		<a href="#top" data-position="fixed" data-tap-toggle="false" class="go-top"></a>
+		<!-- footer end -->
+	</div>
+
+	<script src="js/slick.min.js"></script>
+	<script type="text/javascript">
+    $(document).ready(function(){
+
+      $('.btn-cate-more').click(function() {
+		    $('.cate-more-detail').slideToggle(200).css('borderTop', 'none');
+		    $('.cate-more-detail li').click(function() {
+		        $('.selectBox').slideUp(200);
+		    });
+	  });
+	  $(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.go-top').fadeIn();
+		} else {
+			$('.go-top').fadeOut();
+		}
+	  });
+
+	  $('.go-top').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	  });
+    });
+  </script>
+</body>
+</html>

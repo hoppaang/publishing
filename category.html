@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" 	/>
+	<title>SAMSUNG 员工福利网</title>
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/mall-style.css">
+	
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	
+</head>
+<body>
+	<div data-role="page" id="home">
+		<!-- header begin -->
+		<header data-role="header">
+			<h1><input type="search" name="password" id="search" value="" placeholder=""></h1>
+			<a href="#" class="brand fl"></a>
+			<a href="#" class="icon-header mypage fr"></a>
+		</header>
+		<!-- header end -->
+
+		<!-- content begin -->
+		<div role="main" class="ui-content">
+			<!-- category begin -->
+			<div class="category-bar-container">
+				<ul class="category-bar">
+					<li><a href="#">化妆品/个人护理</a></li>
+					<li><a href="#">化妆品/个人护理</a></li>
+					<li>
+						<div class="cate-more">
+							<button class="icon-header btn-cate-more"></button>
+							<ul class="cate-more-detail">
+						        <li><a href="#">category item 1</a></li>
+						        <li><a href="#">category item 2</a></li>
+						        <li><a href="#">category item 3</a></li>
+				    		</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- category end -->
+
+			<!-- tab layout begin -->
+			<div data-role="tabs" class="category-tab">
+				<!-- tab menu begin -->
+			    <ul data-role="listview" data-inset="true" class="tablist-left">
+					<li aria-selected="true"><a href="#category1" data-ajax="false">热卖商品</a></li>
+					<li><a href="#category2" data-ajax="false">化妆品/个人护理</a></li>
+					<li><a href="#category3" data-ajax="false">母婴/儿童</a></li>
+					<li><a href="#category4" data-ajax="false">category4</a></li>
+					<li><a href="#category5" data-ajax="false">category5</a></li>
+					<li><a href="#category6" data-ajax="false">category6</a></li>
+					<li><a href="#category7" data-ajax="false">category7</a></li>
+					<li><a href="#category8" data-ajax="false">category8</a></li>
+			    </ul>
+				<!-- tab menu end -->
+
+				<!-- tab content begin -->
+			    <div id="category1" class="ui-body-d tablist-content">
+					<ul>
+						<li><a href="#"><img src="images/icon-category1.png"/>珠宝</a></li>
+						<li><a href="#"><img src="images/icon-category2.png"/>数码相机</a></li>
+						<li><a href="#"><img src="images/icon-category3.png"/>美妆馆</a></li>
+						<li><a href="#"><img src="images/icon-category2.png"/>数码相机</a></li>
+					</ul>
+				</div>
+
+				<div id="category2" class="ui-body-d tablist-content">
+					<ul>
+						<li><a href="#"><img src="images/icon-category1.png"/>珠宝</a></li>
+						<li><a href="#"><img src="images/icon-category1.png"/>珠宝</a></li>
+						<li><a href="#"><img src="images/icon-category1.png"/>珠宝</a></li>
+						<li><a href="#"><img src="images/icon-category1.png"/>珠宝</a></li>
+					</ul>
+				</div>
+
+				<div id="category3" class="ui-body-d tablist-content">
+					<ul>
+						<li><a href="#"><img src="images/icon-category2.png"/>珠宝</a></li>
+						<li><a href="#"><img src="images/icon-category2.png"/>珠宝</a></li>
+						<li><a href="#"><img src="images/icon-category2.png"/>珠宝</a></li>
+						<li><a href="#"><img src="images/icon-category2.png"/>珠宝</a></li>
+					</ul>
+				</div>
+				<!-- tab content end -->
+			</div>
+			<!-- tab layout end -->
+		</div>
+		<!-- content end -->
+
+		<!-- footer begin -->
+		<a href="#top" data-position="fixed" data-tap-toggle="false" class="go-top"></a>
+		<div data-role="footer" data-position="fixed" data-tap-toggle="false">
+			<div class="ui-input-btn ui-btn icon-footer home ui-btn-icon-top">网站<input type="button" data-enhanced="true" value="Enhanced - Top"></div>
+			<div class="ui-input-btn ui-btn icon-footer wishlist ui-btn-icon-top">愿望目录<input type="button" data-enhanced="true" value="Enhanced - Top"></div>
+			<div class="ui-input-btn ui-btn icon-footer cart ui-btn-icon-top">购物篮<input type="button" data-enhanced="true" value="Enhanced - Top"></div>
+			<div class="ui-input-btn ui-btn icon-footer order ui-btn-icon-top">订单/配送<input type="button" data-enhanced="true" value="Enhanced - Top"></div>
+			<div class="ui-input-btn ui-btn icon-footer mypage ui-btn-icon-top">我的页面<input type="button" data-enhanced="true" value="Enhanced - Top"></div>
+		</div>
+		<!-- footer end -->
+	</div>
+
+	<script src="js/slick.min.js"></script>
+	<script type="text/javascript">
+    $(document).ready(function(){
+
+      $('.btn-cate-more').click(function() {
+		    $('.cate-more-detail').slideToggle(200).css('borderTop', 'none');
+		    $('.cate-more-detail li').click(function() {
+		        $('.selectBox').slideUp(200);
+		    });
+			});
+
+			$(window).scroll(function(){
+			if ($(this).scrollTop() > 100) {
+				$('.go-top').fadeIn();
+				} else {
+					$('.go-top').fadeOut();
+				}
+			});
+
+			$('.go-top').click(function(){
+				$('html, body').animate({scrollTop : 0},800);
+				return false;
+		  });
+    });
+  </script>
+</body>
+</html>
