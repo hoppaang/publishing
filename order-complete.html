@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" 	/>
+	<title>SAMSUNG 员工福利网</title>
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/mall-style.css">
+	
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	
+</head>
+<body>
+	<div data-role="page" id="order-complete">
+		<!-- header begin -->
+		<header data-role="header" class="border-bottom-blue">
+			<h1>订单完成</h1>
+			<a href="#" class="icon-header back fr"></a>
+			<a href="#" class="icon-header list fr"></a>
+		</header>
+		<!-- header end -->
+
+		<!-- content begin -->
+		<div role="main" class="ui-content">
+			<!-- order number begin -->
+			<div class="order-number bg-blue shadow-inset">
+				<label>顾客的订购号是</label>
+				AS0120150911151110280780
+			</div>
+			<!-- order number end -->
+
+			<!-- detail product side info begin -->
+			<div class="detailinfo-side-info float-clear">
+				<div class="side-info-cell">
+					<span class="side-info-icon clipboard"></span>
+					<label>订单信息</label>
+				</div>
+			</div>
+			<!-- detail product side info end -->	
+
+			<!-- order product info begin -->
+			<div class="order-product-info">
+				<div class="product-img">
+					<img src="images/tag-korea.png" class="tag-korea">
+					<a href="#"><img src="images/sample-product-detail1.png"/></a>
+				</div>
+				<div class="product-infos">
+					<span class="product-name">韩国直邮Innisfree</span>
+					<span class="desc">悦诗风吟绿茶精萃保湿系列 夏季男女士清爽保 湿补水 眼唇脸部卸妆水300ml + 绿茶籽菁华面霜 50ml</span>
+					<span class="option">选项 : <strong>白色</strong></span>
+					<span class="option">数量 : <strong>1 个</strong></span>
+					<span class="price">￥210.00</span>
+				</div>
+			</div>
+			<!-- order product info end -->
+
+			<!-- detail product side info begin -->
+			<div class="detailinfo-side-info float-clear">
+				<div class="side-info-cell bg-gray shadow-inset">
+					<table class="dot-blue-th dot-bottom-line width-100p">
+						<tr>
+							<th>姓名</th>
+							<td><strong>弘吉東</strong></td>
+						</tr>
+						<tr>
+							<th>电话</th>
+							<td>0000-00000000</td>
+						</tr>
+						<tr>
+							<th>手机</th>
+							<td>000-0000-0000</td>
+						</tr>
+						<tr>
+							<th>地址</th>
+							<td>北京市朝阳区望京园602号楼23层2712室 2712室</td>
+						</tr>
+						<tr>
+							<th>付款方式</th>
+							<td>银联在线</td>
+						</tr>
+						<tr>
+							<th>航运</th>
+							<td><span class="price-color">25 元</span></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<!-- ddetail product side info  end -->
+
+			<!-- detail product side info begin -->
+			<div class="detailinfo-side-info float-clear">
+				<div class="side-info-cell bg-light-yellow">
+					<span class="side-info-icon basket"></span>
+					<label>合计</label>
+					<span class="desc"><strong class="price-color">25 元</strong></span>
+				</div>
+			</div>
+			<!-- detail product side info end -->	
+
+			<!-- bottom button begin -->
+			<div class="btn-line-bottom">
+				<a href="#" class="ui-btn ui-btn-inline btn-icon home">主页</a>
+				<a href="#" class="ui-btn ui-btn-inline btn-icon check-small pull-right">订单明细</a>
+			</div>
+			<!-- bottom button end -->
+		</div>
+	</div>
+
+	<script src="js/slick.min.js"></script>
+	<script type="text/javascript">
+    $(document).ready(function(){
+      $('.product-detail-slick').slick({
+      	dots:true
+      });
+    });
+  </script>
+</body>
+</html>

@@ -14,7 +14,7 @@
 	
 </head>
 <body>
-	<div data-role="page" id="home">
+	<div data-role="page" id="detail-info">
 		<!-- header begin -->
 		<header data-role="header" class="border-bottom-blue">
 			<h1>绿茶籽菁华面霜</h1>
@@ -26,26 +26,88 @@
 		<!-- content begin -->
 		<div role="main" class="ui-content">
 			<!-- detail product img swipe begin -->
+			<div class="tag-big"><img src="images/tag-korea-big.png" class="tag-best"></div>
 			<div class="product-detail-slick">
 			  <div><a href="#"><img src="images/sample-product-detail1.png"/></a></div>
 			  <div><a href="#"><img src="images/sample-product-detail2.png"/></a></div>
 			</div>
 			<!-- detail product img swipe begin -->
 
-			<!-- detail procut info begin -->
+			<!-- detail product info begin -->
 			<div class="detailinfo-info">
 				<span class="desc">韩国直邮Innisfree悦诗风吟绿茶精萃保湿系列 夏季男女士清爽保 湿补水 眼唇脸部卸妆水300ml + 绿茶籽菁华面霜 50ml</span>
 				<span class="price"><strike>￥223.50</strike> ￥210.00</span>
 			</div>
-			<!-- detail procut info end -->
+			<!-- detail product info end -->
 
-			<!-- detail procut option begin -->
-			<div class="detailinfo-option">option</div>
-			<!-- detail procut option end -->
+			<!-- detail product option begin -->
+			<div class="detailinfo-option">
+				<div class="info-cell label-width-small">
+					<label>选项</label>
+					<select name="select-choice-1" id="select-choice-1">
+					    <option value="standard">白色</option>
+					    <option value="rush">option1</option>
+					</select>
+				</div>
 
-			<!-- detail procut side info begin -->
-			<div class="detailinfo-side-info">side</div>
-			<!-- ddetail procut side info  end -->
+				<div class="info-cell label-width-small input-width-midium">
+					<label>数量</label>
+					<button class="numbtn minus pull-left"></button>
+					<input type="text" value="1" class="width-midium pull-left align-center"/>
+					<button class="numbtn plus pull-left"></button>
+				</div>
+			</div>
+			<!-- detail product option end -->
+
+			<!-- detail product side info begin -->
+			<div class="detailinfo-side-info">
+				<div class="side-info-cell shadow-inset">
+					<span class="side-info-icon truck"></span>
+					<label>航运</label>
+					<span class="desc">请选择邮寄地址</span>
+					<a href="#" class="icon-next"></a>
+				</div>
+
+				<div class="side-info-cell bg-gray shadow-inset">
+					<table>
+						<tr>
+							<th>制造商/制造商</th>
+							<td>MEGADYNE / 韩国</td>
+						</tr>
+						<tr>
+							<th>平均送货</th>
+							<td>7 ~ 8 日期</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="side-info-cell shadow-inset">
+					<span class="side-info-icon monitor"></span>
+					<label>商品详细内容</label>
+					<a href="#" class="icon-next"></a>
+				</div>
+
+				<div class="side-info-cell shadow-inset">
+					<span class="side-info-icon clipboard"></span>
+					<label>配送情报</label>
+					<a href="#" class="icon-next"></a>
+				</div>
+
+				<div class="side-info-cell shadow-inset">
+					<span class="side-info-icon replace"></span>
+					<label>退货/退换</label>
+					<a href="#" class="icon-next"></a>
+				</div>
+			</div>
+			<!-- ddetail product side info  end -->
+
+			<!-- bottom button begin -->
+			<div class="btn-line-bottom">
+				<a href="#" class="ui-btn ui-btn-inline btn-icon wishlist">愿望目录</a>
+				<a href="#" class="ui-btn ui-btn-inline btn-icon cart">购物篮</a>
+				<a href="#" class="ui-btn ui-btn-inline btn-icon check pull-right focus-color">立即购买</a>
+			</div>
+			<!-- bottom button end -->
 		</div>
 	</div>
 

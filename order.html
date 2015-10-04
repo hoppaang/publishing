@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" 	/>
+	<title>SAMSUNG 员工福利网</title>
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/mall-style.css">
+	
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	
+</head>
+<body>
+	<div data-role="page" id="order">
+		<!-- header begin -->
+		<header data-role="header" class="border-bottom-blue">
+			<h1>订货</h1>
+			<a href="#" class="icon-header back fr"></a>
+			<a href="#" class="icon-header list fr"></a>
+		</header>
+		<!-- header end -->
+
+		<!-- content begin -->
+		<div role="main" class="ui-content">
+			<!-- order product info begin -->
+			<div class="order-product-info">
+				<div class="product-img">
+					<img src="images/tag-korea.png" class="tag-korea">
+					<a href="#"><img src="images/sample-product-detail1.png"/></a>
+				</div>
+				<div class="product-infos">
+					<span class="product-name">韩国直邮Innisfree</span>
+					<span class="desc">悦诗风吟绿茶精萃保湿系列 夏季男女士清爽保 湿补水 眼唇脸部卸妆水300ml + 绿茶籽菁华面霜 50ml</span>
+					<span class="option">选项 : <strong>白色</strong></span>
+					<span class="option">数量 : <strong>1 个</strong></span>
+					<span class="price">￥210.00</span>
+				</div>
+			</div>
+			<!-- order product info end -->
+
+			<!-- detail product side info begin -->
+			<div class="detailinfo-side-info float-clear">
+				<div class="side-info-cell shadow-inset">
+					<span class="side-info-icon truck"></span>
+					<label>航运</label>
+					<span class="desc price-color">25 元</span>
+				</div>
+
+				<div class="side-info-cell bg-light-yellow">
+					<span class="side-info-icon basket"></span>
+					<label>合计</label>
+					<span class="desc">金额 310 + 运费 25 = <strong class="price-color">25 元</strong></span>
+				</div>
+
+				<div class="side-info-cell">
+					<span class="side-info-icon people"></span>
+					<label>订购人 (邮寄人)</label>
+				</div>
+
+				<div class="side-info-cell bg-gray  shadow-inset">
+					<span class="desc">※ 订购人的电话号和手机号，Email是必填内容</span>
+					<table class="width-100p form-panel-table">
+						
+						<tr><td colspan="2" class="panel-title">订购人</td></tr>
+						<tr>
+							<th class="label-small">姓名</th>
+							<td>
+								<strong>弘吉東</strong>
+								<input type="checkbox" name="checkbox-1a" id="checkbox-1a" checked="">
+    <label for="checkbox-1a">发件人名称变更</label>
+							</td>
+						</tr>
+						<tr>
+							<th class="label-small">电话</th>
+							<td><input type="text" name="text-basic" id="text-basic" value=""></td>
+						</tr>
+						<tr>
+							<th class="label-small">手机</th>
+							<td><input type="text" name="text-basic" id="text-basic" value=""></td>
+						</tr>
+						<tr>
+							<th class="label-small">邮件</th>
+							<td class="form-width-mail"><input type="text" name="text-basic" id="text-basic" value="" class="ui-btn-inline"> @ <input type="text" name="text-basic" id="text-basic" value=""></td>
+						</tr>
+					</table>
+
+					<table class="width-100p form-panel-table margin-t10">
+						
+						<tr><td colspan="2" class="panel-title">签收人(收货人)</td></tr>
+						<tr>
+							<th class="label-small">选择</th>
+							<td class="radio-mini">
+								<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+							        <input type="radio" name="radio-choice-b" id="radio-choice-c" value="list" checked="checked"><label for="radio-choice-c">与订货者相同</label>
+							        <input type="radio" name="radio-choice-b" id="radio-choice-d" value="grid"><label for="radio-choice-d">新的地址 </label>
+								</fieldset>
+							</td>
+						</tr>
+						<tr>
+							<th class="label-small">姓名</th>
+							<td><input type="text" name="text-basic" id="text-basic" value=""></td>
+						</tr>
+						<tr>
+							<th class="label-small">电话</th>
+							<td><input type="text" name="text-basic" id="text-basic" value=""></td>
+						</tr>
+						<tr>
+							<th class="label-small">手机</th>
+							<td><input type="text" name="text-basic" id="text-basic" value=""></td>
+						</tr>
+						<tr>
+							<th class="label-small">地址</th>
+							<td>
+								<select name="select-choice-mini" id="select-choice-mini" data-mini="true" data-inline="true">
+								    <option value="standard">请选择</option>
+								</select>
+								<select name="select-choice-mini" id="select-choice-mini" data-mini="true" data-inline="true">
+								    <option value="standard">请选择</option>
+								</select>
+								<select name="select-choice-mini" id="select-choice-mini" data-mini="true" data-inline="true">
+								    <option value="standard">请选择</option>
+								</select>
+								<input type="text" name="text-basic" id="text-basic" value="">
+							</td>
+						</tr>
+						<tr>
+							<th class="label-small">要求事项</th>
+							<td><textarea cols="40" rows="8" name="textarea" id="textarea"></textarea></td>
+						</tr>
+					</table>
+
+					<table class="width-100p form-panel-table margin-t10">
+						<tr><td colspan="2" class="panel-title">折扣信息</td></tr>
+						<tr>
+							<th class="label-small">合计</th>
+							<td class="height-45"><strong class="price-color margin-r10">387 元</strong>运费(77元 ) </td>
+						</tr>
+						<tr>
+							<th class="label-small">积分</th>
+							<td class="form-width-small">
+								<input type="text" name="text-basic" id="text-basic" value=""> 元 
+								<a href="#" class="ui-btn ui-corner-all ui-btn-inline margin-clear margin-l10" style="padding:.5em 1em;color:#585858">全额使用</a>
+							</td>
+						</tr>
+						<tr>
+							<th class="label-small">总计</th>
+							<td class="height-45"><strong class="price-color margin-r10">387 元</strong></td>
+						</tr>
+					</table>
+
+					<table class="width-100p form-panel-table margin-t10">
+						<tr><td colspan="2" class="panel-title">付款方式</td></tr>
+						<tr>
+							<th class="label-small">合计</th>
+							<td class="radio-mini">
+								<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true"><input type="radio" name="radio-pay" id="radio-pay1" value="list" checked="checked"><label for="radio-pay1">支付宝</label><input type="radio" name="radio-pay" id="radio-pay2" value="grid"><label for="radio-pay2">财付通</label><input type="radio" name="radio-pay" id="radio-pay3" value="grid"><label for="radio-pay3">银联在线</label>
+								</fieldset>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<!-- ddetail product side info  end -->
+
+			<!-- bottom button begin -->
+			<div class="btn-line-bottom">
+				<a href="#" class="ui-btn btn-icon check pull-right">立即购买</a>
+			</div>
+			<!-- bottom button end -->
+		</div>
+	</div>
+
+	<script src="js/slick.min.js"></script>
+	<script type="text/javascript">
+    $(document).ready(function(){
+      $('.product-detail-slick').slick({
+      	dots:true
+      });
+    });
+  </script>
+</body>
+</html>
