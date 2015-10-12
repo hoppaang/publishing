@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" 	/>
+	<title>SAMSUNG 员工福利网</title>
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/mall-style.css">
+	
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	
+</head>
+<body>
+	<div data-role="page" id="order-complete">
+		<!-- header begin -->
+		<header data-role="header" class="border-bottom-blue">
+			<h1>查询订单信息</h1>
+			<a href="#" class="icon-header back fr"></a>
+		</header>
+		<!-- header end -->
+
+		<!-- content begin -->
+		<div role="main" class="ui-content">
+
+			<div class="side-info-cell shadow-inset radio-mini align-center">
+				<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+					<input type="radio" name="radio-pay" id="radio-pay1" value="list" checked="checked"><label for="radio-pay1" class="min-width-45 align-center">今天</label>
+					<input type="radio" name="radio-pay" id="radio-pay2" value="grid"><label for="radio-pay2" class="min-width-45 align-center">一周</label>
+					<input type="radio" name="radio-pay" id="radio-pay3" value="grid"><label for="radio-pay3" class="min-width-45 align-center">一个月</label>
+					<input type="radio" name="radio-pay" id="radio-pay4" value="grid"><label for="radio-pay4" class="min-width-45 align-center">三个月</label>
+				</fieldset>
+			</div>
+
+			<div class="side-info-cell input-width-small">
+				<input type="date" id="date_val" data-role="datebox" data-options='{"mode": "calbox", "useNewStyle":true}'>
+				<span class="pull-left margin-l7 margin-t15">~</span>
+				<input type="date" id="date_val" data-role="datebox" data-options='{"mode": "calbox", "useNewStyle":true}'>
+				<a href="#" class="ui-btn ui-corner-all ui-btn-inline btn-inline-type1">查询</a>
+			</div>
+
+			<div class="side-info-cell bg-blue">
+				<a href="#" class="order-step">付款完成<strong>0</strong></a>
+				<a href="#" class="order-step">配送中<strong>1</strong></a>
+				<a href="#" class="order-step">配送完成<strong>0</strong></a>
+				<a href="#" class="order-step">订单取消<strong>2</strong></a>
+				<a href="#" class="order-step">退货/交换<strong>0</strong></a>
+			</div>
+
+			<!-- order product info begin -->
+			<div class="side-info-cell border-top-lightgray">
+				<label class="margin-l10 order-number">
+					AS0120150911151110280780
+					<span>2015-09-11</span>
+				</label>
+				<a href="#" class="icon-next"></a>
+			</div>
+			<div class="order-product-info bg-gray shadow-inset">
+				<!-- cell begin -->
+				<div class="product-img">
+					<img src="images/tag-korea.png" class="tag-korea">
+					<a href="#"><img src="images/sample-product-detail1.png"/></a>
+				</div>
+				<div class="product-infos">
+					<span class="product-name">韩国直邮Innisfree</span>
+					<span class="desc">悦诗风吟绿茶精萃保湿系列 夏季男女士清爽保 湿补水 眼唇脸部卸妆水300ml + 绿茶籽菁华面霜 50ml</span>
+					<span class="option">选项 : <strong>白色</strong></span>
+					<span class="option">数量 : <strong>1 个</strong></span>
+					<span class="price">￥210.00</span>
+				</div>
+				<!-- cell end -->
+			</div>
+			<!-- order product info end -->
+
+			<!-- order product info begin -->
+			<div class="side-info-cell border-top-lightgray">
+				<label class="margin-l10 order-number">
+					AS0120150911151110280790
+					<span>2015-09-10</span>
+				</label>
+				<a href="#" class="icon-next"></a>
+			</div>
+			<div class="order-product-info bg-gray shadow-inset">
+				<!-- cell begin -->
+				<div class="product-img">
+					<a href="#"><img src="images/sample-product-detail1.png"/></a>
+				</div>
+				<div class="product-infos">
+					<span class="product-name">韩国直邮Innisfree</span>
+					<span class="desc">悦诗风吟绿茶精萃保湿系列 夏季男女士清爽保 湿补水 眼唇脸部卸妆水300ml + 绿茶籽菁华面霜 50ml</span>
+					<span class="option">选项 : <strong>白色</strong></span>
+					<span class="option">数量 : <strong>1 个</strong></span>
+					<span class="price">￥210.00</span>
+				</div>
+				<!-- cell end -->
+			</div>
+			<!-- order product info end -->
+		</div>
+	</div>
+
+	<script src="js/slick.min.js"></script>
+	<script type="text/javascript">
+    $(document).ready(function(){
+    });
+  </script>
+</body>
+</html>

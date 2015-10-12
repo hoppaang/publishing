@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" 	/>
+	<title>SAMSUNG 员工福利网</title>
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/mall-style.css">
+	
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	
+</head>
+<body>
+	<div data-role="page" id="login-regi-info">
+		<!-- header begin -->
+		<header data-role="header" class="border-bottom-blue">
+			<h1>会员注册</h1>
+			<a href="#" class="icon-header back fr"></a>
+		</header>
+		<!-- header end -->
+
+		<!-- content begin -->
+		<div role="main" class="ui-content">
+			<div class="detailinfo-side-info float-clear">
+				<div class="side-info-cell">
+					<span class="side-info-icon pen"></span>
+					<label>输入信息</label>
+				</div>
+			</div>
+
+			<!-- detail product side info begin -->
+			<div class="detailinfo-side-info float-clear">
+				<div class="side-info-cell bg-gray shadow-inset">
+					<table class="dot-blue-th dot-bottom-line width-100p">
+						<tr>
+							<th>员工编号</th>
+							<td>A123456</td>
+						</tr>
+						<tr>
+							<th>姓名</th>
+							<td>洪吉童</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<!-- form begin -->
+			<div class="log-form margin-clear border-clear">
+				<div class="ui-field-contain">
+					<label for="textinput-name">密码</label>
+					<input type="text" name="textinput-name" id="textinput-name"/>
+				</div>
+				<div class="ui-field-contain">
+					<label for="textinput-pw">密码确认</label>
+					<input type="password" name="textinput-pw" id="textinput-pw"/>
+				</div>
+				<div class="ui-field-contain">
+					<label for="textinput-pw">电子邮件</label>
+					<input type="password" name="textinput-pw" id="textinput-pw"/>
+				</div>
+				<div class="ui-field-contain">
+					<label for="textinput-pw">手机</label>
+					<input type="password" name="textinput-pw" id="textinput-pw"/>
+				</div>
+			</div>
+
+			<input type="checkbox" name="checkbox-1a" id="checkbox-1a" checked=""><label for="checkbox-1a">同意使用条款</label>
+			<input type="checkbox" name="checkbox-1b" id="checkbox-1b" checked=""><label for="checkbox-1b">同意个人情报涉及方针</label>
+			<!-- form end -->
+
+			<!-- button begin -->
+			<div class="padding-all15">
+				<a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all ui-shadow btn-blue">确认</a>
+
+				<div data-role="popup" id="popupDialog" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+					<div role="main" class="ui-content align-center">
+						<h3 class="ui-title">注册成功，请登录</h3>
+						<p>description or message..</p>
+						<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back" data-transition="flow">确认</a>
+					</div>
+				</div>
+			</div>
+			<!-- button end -->
+		</div>
+		<!-- content end -->
+	</div>
+
+	<script src="js/slick.min.js"></script>
+	<script type="text/javascript">
+    $(document).ready(function(){
+    });
+  </script>
+</body>
+</html>

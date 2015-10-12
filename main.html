@@ -27,20 +27,16 @@
 		<div role="main" class="ui-content">
 			<!-- category begin -->
 			<div class="category-bar-container">
-				<ul class="category-bar">
-					<li><a href="#">化妆品/个人护理</a></li>
-					<li><a href="#">化妆品/个人护理</a></li>
-					<li>
-						<div class="cate-more">
-							<button class="icon-header btn-cate-more"></button>
-							<ul class="cate-more-detail">
-						        <li><a href="#">category item 1</a></li>
-						        <li><a href="#">category item 2</a></li>
-						        <li><a href="#">category item 3</a></li>
-				    		</ul>
-						</div>
-					</li>
-				</ul>
+				<div class="cate-more">
+					<button class="icon-header btn-cate-more"></button>
+				</div>
+				<div class="cate-list">
+					<ul class="category-bar" style="width:700px"><!--width를 개발코드에서 찍어주셔야합니다.-->
+						<li><a href="#">化妆品/个人护理</a></li>
+						<li><a href="#">化妆品/个人护理</a></li>
+						<li><a href="#">化妆品/个人护理</a></li>
+					</ul>
+				</div>
 			</div>
 			<!-- category end -->
 
@@ -55,7 +51,7 @@
 			<div class="myinfo-main">
 				<div class="user-name"><span>samsung electronics</span>韓裕美</div>
 				<div class="user-remain-point"><span>剩余积分</span>350</div>
-				<div class="user-accum-point"><span>累计积分</span>2,000</div>
+				<div class="go-mypage"><a href="#"></a></div>
 			</div>
 			<!-- my info end -->
 
@@ -178,27 +174,7 @@
   			speed: 300,
   			slidesToShow: 3.5
       });
-
-      $('.btn-cate-more').click(function() {
-		    $('.cate-more-detail').slideToggle(200).css('borderTop', 'none');
-		    $('.cate-more-detail li').click(function() {
-		        $('.selectBox').slideUp(200);
-		    });
-			});
-
-			$(window).scroll(function(){
-			if ($(this).scrollTop() > 100) {
-				$('.go-top').fadeIn();
-				} else {
-					$('.go-top').fadeOut();
-				}
-			});
-
-			$('.go-top').click(function(){
-				$('html, body').animate({scrollTop : 0},800);
-				return false;
-		  });
-    });
+    });  
   </script>
 </body>
 </html>
