@@ -1,0 +1,34 @@
+/* common */
+*{-webkit-tap-highlight-color:rgba(0,0,0,0);margin:0;padding:0;}
+ul{list-style:none;padding:0;margin:0;}
+a{text-decoration:none;color:#333;}
+.border-bottom-blue{border-bottom:2px solid #3a79c8 !important;}
+.pull-left{float:left !important;}
+.pull-right{float:right !important;}
+
+/* header style */
+header{background:#fff !important;border:none !important;padding:.3em .3em;}
+header h1{margin:0 15% 0 15%;color:#3a79c8;font-size:1.4em !important;text-shadow:none !important;font-weight:400;line-height:2;text-align:center;}
+header.header-brand h1{margin:0 15% 0 25%;}
+header .brand{background:url('../images/brand.png') 50% 45% no-repeat transparent !important;background-size:90% !important;box-shadow:none !important;border:none !important;min-width:90px;height:40px;margin-top:1px !important;}
+header input{
+	background:url('../images/icon-search.png').4em 50% no-repeat;background-size:8%;padding:.2em .4em .2em 1.3em;width:100%;
+	border:1px solid #91b5e0;border-radius:0;-webkit-border-radius:0;-moz-border-radius:0;min-height:1.2em;
+	font-size:1.0em;
+}
+header .icon-header,.icon-header{background:url('../images/icon-header.png') no-repeat transparent !important;}
+header a.icon-header,.icon-header{border:none !important;padding:0 !important;-webkit-box-shadow:none !important;box-shadow:none !important;}
+.icon-header.mypage{background-position:0 5px !important;border:none;background-size:180% !important;width:35px;height:38px;margin-top:.1em;}
+.icon-header.back{background-position:8px -113px !important;border:none;background-size:180% !important;width:33px;height:36px;}
+.icon-header.list{background-position:0 -178px !important;border:none;background-size:180% !important;width:35px;height:38px;}
+.icon-header.btn-cate-more{background-position:0 -182px !important;background-size:180% !important;width:35px !important;height:38px;margin:.2em .4em .2em 0;}
+.btn-cate-more{position:absolute;right:0;}
+
+/* footer style */
+.ui-footer{background-color:rgba(41,104,182,0.8) !important;position:fixed;bottom:0;width:100%;padding-top:.2em;padding-bottom:.3em;}
+.ui-footer .ui-btn{width:19%;display:inline-block;padding-bottom:0;font-size:13px;text-align:center;color:#fff;}
+.icon-footer:before{content:"";background:url('../images/icon-footer.png') 50% 3px no-repeat;background-size:100%;top:.2em;width:35px;height:35px;display:block;margin:auto;}
+.icon-footer.wishlist:before{background-position:50% -67px}
+.icon-footer.cart:before{background-position:50% -137px}
+.icon-footer.order:before{background-position:50% -207px}
+.icon-footer.mypage:before{background-position:50% -277px}
