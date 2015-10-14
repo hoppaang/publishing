@@ -48,6 +48,8 @@ a.go-top{
 .margin-l10{margin-left:10px !important;}
 .margin-t15{margin-top:15px !important;}
 .margin-r50{margin-right:50px !important;}
+.margin-all10{margin:10px !important;}
+.margin-all15{margin:15px !important;}
 .padding-all15{padding:15px !important;}
 .dot-blue-th th{background:url('../images/dot-blue-3.png') 0 47% no-repeat;padding-left:.5em !important;white-space:nowrap}
 .dot-bottom-line th,.dot-bottom-line td{border-bottom:1px dotted #e0e0e0;}
@@ -55,6 +57,9 @@ a.go-top{
 .btn-blue{background-color:#3a79c8 !important;border-color:#2862ab !important;text-shadow:none !important;color:#fff !important;font-weight:500;}
 .btn-gray:active,.btn-blue:active{background-color:#7eb550 !important;border-color:#659f35;}
 .readonly .ui-input-text{border:0 !important;box-shadow:none;color:#333;}
+.bold{font-weight:bold;}
+.fontsize13{font-size:1.3em;}
+.fontsize14{font-size:1.4em;}
 
 /* header style */
 header{background:#fff !important;border:none !important}
@@ -243,6 +248,11 @@ header a.icon-header,.icon-header{border:none !important;padding:0 !important;-w
 .form-panel-table .radio-mini label,.radio-mini label{line-height:1.5;height:20px !important;}
 .form-panel-table .ui-select.ui-btn-inline{margin:.1em .2em .1em 0;}
 .form-panel-table #select-choice-mini-button{padding:.4em 2.3em .4em .5em !important;font-size:1.1em;color:#585858;}
+.cart-select-checkbox{position:absolute;}
+.cart-select-checkbox .ui-btn{background-color:transparent;border:none;padding:0;width:18px;height:18px;overflow:hidden;display:block;left:8px;}
+.cart-select-checkbox .ui-btn.ui-checkbox-off:after, .cart-select-checkbox .ui-btn.ui-checkbox-on:after,.cart-select-checkbox  .ui-btn.ui-radio-off:after,.cart-select-checkbox  .ui-btn.ui-radio-on:after{margin-left:0}
+.cart-select-checkbox .ui-btn-icon-left:after{left:0;}
+.cart-select-checkbox .ui-btn.ui-checkbox-off:after{background-color:rgba(204,204,204,1.0) !important;opacity:1;}
 
 /* page style - order complete */
 .order-number{padding:.5em;text-align:center;text-shadow:none;color:#fff;font-size:1.3em;font-weight:600;}
